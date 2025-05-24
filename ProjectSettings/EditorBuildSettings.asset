@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Realistic Car Controller Pro/Addons/Installed/Demo Content/Scenes/RCCP_Scene_City.unity
-    guid: d655d8137d166214fbd01d75eff6cc89
-  - enabled: 1
-    path: Assets/InsaneSystems/RoadGPSNavigator/Scenes/Example.unity
-    guid: cbff068220e2eb9479f72e25b763b64b
+    path: Assets/City/demo city.unity
+    guid: 41c0aa4a0b4f91c499fa370ee7a54d78
   m_configObjects: {}
