@@ -12,6 +12,7 @@ public class NavigationTargetController : MonoBehaviour
     [SerializeField] private Transform[] targets;
 
     [SerializeField] private Button randomLocBtn;
+    private GameObject lastTarget;
 
     private void Awake()
     {
@@ -25,6 +26,20 @@ public class NavigationTargetController : MonoBehaviour
 
     public void SetRandomTarget()
     {
-        navigator.SetTargetPoint(targets[Random.Range(0, targets.Length)].position);
+        if (lastTarget != null) lastTarget.gameObject.SetActive(false);
+        lastTarget = GetRandomTarget();
+        lastTarget.gameObject.SetActive(true);
+        navigator.SetTargetPoint(lastTarget.transform.position);
+    }
+
+    private GameObject GetRandomTarget()
+    {
+        GameObject nextTarget = null;
+        while (nextTarget == null)
+        {
+            GameObject tempObj = targets[Random.Range(0, targets.Length)].gameObject;
+            if (lastTarget != null || lastTarget != tempObj) nextTarget = tempObj;
+        }
+        return nextTarget;
     }
 }

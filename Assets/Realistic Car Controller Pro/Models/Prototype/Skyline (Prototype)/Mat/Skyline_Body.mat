@@ -9,6 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Skyline_Body
   m_Shader: {fileID: 4800000, guid: f75a889d58c671f43b02774c9dc452bd, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _DETAIL_MULX2
@@ -20,6 +22,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -123,7 +126,7 @@ Material:
     - _DiffuseColor: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
     - _EmissionColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
     - _FlakesColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FresnelColor: {r: 0.29799998, g: 0.29799998, b: 0.29799998, a: 1}
+    - _FresnelColor: {r: 1, g: 0.7118234, b: 0, a: 1}
     - _Vector0: {r: 0, g: 0, b: 0, a: 0}
     - _Vector1: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
