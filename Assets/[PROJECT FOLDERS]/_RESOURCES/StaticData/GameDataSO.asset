@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a62e9bf16add5a48af66921c4fe5176, type: 3}
   m_Name: GameDataSO
   m_EditorClassIdentifier: 
-  StartTimerSeconds: 15
+  StartTimerSeconds: 45
   TimeReward: 5
-  PointsReward: 1000
+  PointsReward: 100
